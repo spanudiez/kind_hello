@@ -1,0 +1,5 @@
+apiVersion: v2
+name: hello
+appVersion: "1.16.0"
+description: My hello boss app
+version: 0.1.0

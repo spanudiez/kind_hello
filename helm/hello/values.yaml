@@ -1,0 +1,18 @@
+replicaCount: 1
+
+image:
+  repository: docker.io/spanudiez/ionut 
+  tag: latest
+  pullPolicy: Always 
+
+service:
+  name: hello 
+  type: NodePort 
+  port: 80
+
+ingress:
+  enabled: true 
+  hosts:
+    - host: hello.local 
+      paths:
+        - /
